@@ -16,3 +16,23 @@ This is NOT a beginner tutorial and I will not be teaching python syntax. It is 
 
 * Intermediate Programming Knowledge
 * Experience With Python 3 Syntax
+
+# What is a Neural Network?
+So what is a neural network? When most people hear of a neural network
+the think of some magical black box that is capable of solving very complicated problems. 
+
+In reality a neural network is just a very fancy math formula, well kind of. 
+A neural network is biologically inspired and named after the network of neurons that exist
+in your brain. A neural network is simply a group of connected neurons,
+there are some input neurons, some output neurons and a group of what we call hidden 
+neurons in between. When we feed information to the input neurons we get some information
+from the output neurons. Information starts at the input neurons and travels to the next
+layers of neurons having whats called a weight and a bias applied to it.
+
+These weight and biases start out randomly determined and are tweaked as the network learns
+and sees more data. After reaching a new layer there is a function applied to each neurons
+value that is called an activation function.
+
+<p align="center">
+    <img src="img/neural-network.png" width="80%">
+</p>
