@@ -84,10 +84,19 @@ predictions = model.predict(test_images)
 """
 Now we will display the first 5 images and their predictions using matplotlib.
 """
-plt.figure(figsize=(5, 5))
-for i in range(5):
-    plt.grid(False)
-    plt.imshow(test_images[i], cmap=plt.cm.binary)
-    plt.xlabel(class_names[test_labels[i]])
-    plt.title(class_names[np.argmax(predictions[i])])
-    plt.show()
+
+
+def plot_figures():
+    plt.figure(figsize=(5, 5))
+    for i in range(5):
+        plt.grid(False)
+        plt.imshow(test_images[i], cmap=plt.cm.binary)
+        plt.xlabel(class_names[test_labels[i]])
+        plt.title(class_names[np.argmax(predictions[i])])
+        plt.show()
+
+# Uncomment to plot the 5 first figures
+# plot_figures()
+for i in range(len(predictions)):
+    print("Actual: ", plt.xlabel(class_names[test_labels[i]]), " || Prediction:",
+          class_names[np.argmax(predictions[i])])
